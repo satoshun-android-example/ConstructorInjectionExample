@@ -7,7 +7,7 @@ import javax.inject.Singleton
 @Singleton
 @Component
 interface AppComponent {
-  fun handler(): UserHandlerWrapper
+  fun inject(activity: MainActivity)
 }
 
 @Singleton
