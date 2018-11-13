@@ -3,7 +3,7 @@ object Vers {
   val min_sdk = 25
   val target_sdk = 28
 
-  val kotlin = "1.3.0"
+  val kotlin = "1.3.10"
   val couroutine = "1.0.0"
 }
 
