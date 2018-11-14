@@ -1,6 +1,6 @@
 object Vers {
   val compile_sdk = 28
-  val min_sdk = 25
+  val min_sdk = 28
   val target_sdk = 28
 
   val kotlin = "1.3.10"
