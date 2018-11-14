@@ -14,7 +14,7 @@ class MainAppComponentFactory : AppComponentFactory() {
     className: String,
     intent: Intent?
   ): Activity {
-    if (className.endsWith("MainActivity")) {
+    if (className == MainActivity::class.java.name) {
       return application.appComponent.mainActivity
     }
     return super.instantiateActivityCompat(cl, className, intent)
