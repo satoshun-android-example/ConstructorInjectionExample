@@ -11,7 +11,7 @@ class MainActivity @Inject constructor(
   private val viewFactory: MainTextViewFactory
 ) : BaseActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
-    DaggerAppComponent.create().inject(this)
+//    DaggerAppComponent.create().inject(this)
     supportFragmentManager.fragmentFactory = fragmentFactory
     layoutInflater.factory = viewFactory
     super.onCreate(savedInstanceState)
