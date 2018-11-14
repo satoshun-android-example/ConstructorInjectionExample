@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import javax.inject.Inject
 
+@Suppress("ValidFragment")
 class MainFragment @Inject constructor(
   private val userHandler: UserHandler
 ) : Fragment() {
@@ -17,6 +18,6 @@ class MainFragment @Inject constructor(
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
-    view.findViewById<TextView>(R.id.count).text = userHandler.count().toString()
+    view.findViewById<TextView>(R.id.count).text = userHandler.count()
   }
 }

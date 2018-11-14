@@ -8,6 +8,8 @@ import javax.inject.Singleton
 @Component
 interface AppComponent {
   fun inject(activity: MainActivity)
+
+  val mainActivity: MainActivity
 }
 
 @Singleton

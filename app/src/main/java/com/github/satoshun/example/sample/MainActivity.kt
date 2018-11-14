@@ -6,9 +6,9 @@ import androidx.fragment.app.commit
 import com.github.satoshun.example.sample.databinding.MainActBinding
 import javax.inject.Inject
 
-class MainActivity : BaseActivity() {
-  @Inject lateinit var factory: MainFragmentFactory
-
+class MainActivity @Inject constructor(
+  private val factory: MainFragmentFactory
+) : BaseActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     DaggerAppComponent.create().inject(this)
     supportFragmentManager.fragmentFactory = factory

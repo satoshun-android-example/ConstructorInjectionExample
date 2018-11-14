@@ -5,6 +5,7 @@
 
   <application
     android:allowBackup="true"
+    android:name=".App"
     android:appComponentFactory="com.github.satoshun.example.sample.MainAppComponentFactory"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"
