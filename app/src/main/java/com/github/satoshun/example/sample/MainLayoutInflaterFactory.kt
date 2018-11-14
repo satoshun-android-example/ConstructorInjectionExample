@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import javax.inject.Inject
 
-class MainTextViewFactory @Inject constructor(
+class MainLayoutInflaterFactory @Inject constructor(
   private val factory: MainTextView.Factory
 ) : LayoutInflater.Factory2 {
   override fun onCreateView(parent: View, name: String, context: Context, attrs: AttributeSet?): View? {

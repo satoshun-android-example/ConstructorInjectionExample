@@ -8,7 +8,7 @@ import javax.inject.Inject
 
 class MainActivity @Inject constructor(
   private val fragmentFactory: MainFragmentFactory,
-  private val viewFactory: MainTextViewFactory
+  private val layoutInflaterFactory: MainLayoutInflaterFactory
 ) : BaseActivity() {
   init {
     supportFragmentManager.fragmentFactory = fragmentFactory
@@ -16,7 +16,7 @@ class MainActivity @Inject constructor(
 
   override fun onCreate(savedInstanceState: Bundle?) {
 //    DaggerAppComponent.create().inject(this)
-    layoutInflater.factory = viewFactory
+    layoutInflater.factory = layoutInflaterFactory
     super.onCreate(savedInstanceState)
 
     val binding = DataBindingUtil.setContentView<MainActBinding>(this, R.layout.main_act)
