@@ -14,4 +14,9 @@
     android:id="@+id/count"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" />
+
+  <com.github.satoshun.example.sample.MainTextView
+    android:id="@+id/count2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
 </LinearLayout>
