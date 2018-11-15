@@ -10,7 +10,7 @@ class MainLayoutInflaterFactory @Inject constructor(
   private val factory: MainTextView.Factory
 ) : LayoutInflater.Factory {
   override fun onCreateView(name: String, context: Context, attrs: AttributeSet?): View? {
-    if (name.endsWith("MainTextView")) {
+    if (name == MainTextView::class.java.name) {
       return factory.create(context)
     }
     return null

@@ -14,7 +14,7 @@ class MainFragmentFactory @Inject constructor(
     className: String,
     args: Bundle?
   ): Fragment {
-    if (className.endsWith("MainFragment")) {
+    if (className == MainFragment::class.java.name) {
       return fragment.get()
     }
     return super.instantiate(classLoader, className, args)
