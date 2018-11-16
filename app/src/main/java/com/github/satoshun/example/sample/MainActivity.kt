@@ -1,6 +1,7 @@
 package com.github.satoshun.example.sample
 
 import android.os.Bundle
+import androidx.core.os.bundleOf
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.commit
 import com.github.satoshun.example.sample.databinding.MainActBinding
@@ -21,7 +22,10 @@ class MainActivity @Inject constructor(
 
     if (savedInstanceState == null) {
       supportFragmentManager.commit {
-        add(R.id.fragment, fragmentFactory.fragment.get())
+        add(
+          R.id.fragment,
+          fragmentFactory.withArgs.create(bundleOf("user_id" to "test_id"))
+        )
       }
     }
   }

@@ -52,6 +52,7 @@ dependencies {
   api Libs.kotlin
   api Libs.appcompat
   api Libs.constraintlayout
+  api Libs.ktx
 
   api Libs.coroutine
   api Libs.ui_coroutine
