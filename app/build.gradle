@@ -61,4 +61,5 @@ dependencies {
   kapt Libs.dagger_processor
 
   implementation Libs.fragmentx
+  implementation Libs.activityx
 }

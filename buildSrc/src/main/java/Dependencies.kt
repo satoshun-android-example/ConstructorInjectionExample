@@ -23,6 +23,7 @@ object Libs {
   val constraintlayout = "androidx.constraintlayout:constraintlayout:2.0.0-alpha2"
   val cardview = "androidx.cardview:cardview:1.0.0"
 
+  val activityx = "androidx.activity:activity-ktx:1.0.0-alpha01"
   val fragmentx = "androidx.fragment:fragment-ktx:1.1.0-alpha01"
 
   val material = "com.google.android.material:material:1.0.0"
